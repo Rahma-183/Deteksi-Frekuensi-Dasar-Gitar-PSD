@@ -1,0 +1,20 @@
+# File catatan pribadi (tidak dipublikasikan ke GitHub)
+CATATAN_PRIBADI.md
+LAPORAN AKHIR 2024 B KELOMPOK 6 PSD.docx
+
+# Dataset mentah berukuran besar (~2 GB, melebihi batas GitHub standar)
+# 8 sampel perwakilan untuk web sudah tersedia di web/public/samples/
+GUITAR/
+
+# Dependensi dan hasil build web
+web/node_modules/
+web/dist/
+.vercel/
+web/.vercel/
+
+# Cache Python dan Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

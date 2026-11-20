@@ -1,0 +1,626 @@
+{
+  "total_samples": 2172,
+  "subset_500_hbstrat": {
+    "count": 500,
+    "fft_accuracy": 57.4,
+    "autocorr_accuracy": 68.0,
+    "fft_freq_range": [
+      76.0,
+      786.0
+    ],
+    "autocorr_freq_range": [
+      50.11,
+      1225.0
+    ]
+  },
+  "overall": {
+    "fft_accuracy": 58.1,
+    "autocorr_accuracy": 78.59,
+    "fft_avg_time_ms": 0.073,
+    "autocorr_avg_time_ms": 2.473,
+    "fft_freq_range": [
+      54.0,
+      884.0
+    ],
+    "autocorr_freq_range": [
+      50.11,
+      1225.0
+    ],
+    "harmonic_conflict_pct": 65.56
+  },
+  "per_brand": [
+    {
+      "Model Gitar": "EpiSG",
+      "Jumlah Sampel": 161,
+      "Akurasi FFT (%)": 44.1,
+      "Akurasi Autocorrelation (%)": 84.47,
+      "Rentang F0 FFT (Hz)": "82.00 – 662.00",
+      "Rentang F0 Autocorrelation (Hz)": "50.11 – 1225.00",
+      "Rata-rata Waktu FFT (ms)": 0.062,
+      "Rata-rata Waktu ACF (ms)": 2.093
+    },
+    {
+      "Model Gitar": "Gretsch",
+      "Jumlah Sampel": 422,
+      "Akurasi FFT (%)": 53.79,
+      "Akurasi Autocorrelation (%)": 86.97,
+      "Rentang F0 FFT (Hz)": "54.00 – 578.00",
+      "Rentang F0 Autocorrelation (Hz)": "50.11 – 1225.00",
+      "Rata-rata Waktu FFT (ms)": 0.082,
+      "Rata-rata Waktu ACF (ms)": 2.761
+    },
+    {
+      "Model Gitar": "HBLP",
+      "Jumlah Sampel": 421,
+      "Akurasi FFT (%)": 56.29,
+      "Akurasi Autocorrelation (%)": 82.42,
+      "Rentang F0 FFT (Hz)": "64.00 – 662.00",
+      "Rentang F0 Autocorrelation (Hz)": "50.11 – 1225.00",
+      "Rata-rata Waktu FFT (ms)": 0.068,
+      "Rata-rata Waktu ACF (ms)": 2.3
+    },
+    {
+      "Model Gitar": "HBStrat",
+      "Jumlah Sampel": 701,
+      "Akurasi FFT (%)": 59.91,
+      "Akurasi Autocorrelation (%)": 73.47,
+      "Rentang F0 FFT (Hz)": "76.00 – 884.00",
+      "Rentang F0 Autocorrelation (Hz)": "50.11 – 1225.00",
+      "Rata-rata Waktu FFT (ms)": 0.076,
+      "Rata-rata Waktu ACF (ms)": 2.503
+    },
+    {
+      "Model Gitar": "HBTE52",
+      "Jumlah Sampel": 467,
+      "Akurasi FFT (%)": 65.74,
+      "Akurasi Autocorrelation (%)": 73.23,
+      "Rentang F0 FFT (Hz)": "64.00 – 594.00",
+      "Rentang F0 Autocorrelation (Hz)": "50.11 – 1225.00",
+      "Rata-rata Waktu FFT (ms)": 0.069,
+      "Rata-rata Waktu ACF (ms)": 2.454
+    }
+  ],
+  "per_note": [
+    {
+      "nada": "A",
+      "jumlah": 337,
+      "fft_acc": 59.05,
+      "autocorr_acc": 65.88
+    },
+    {
+      "nada": "B",
+      "jumlah": 280,
+      "fft_acc": 62.86,
+      "autocorr_acc": 74.29
+    },
+    {
+      "nada": "C",
+      "jumlah": 306,
+      "fft_acc": 59.48,
+      "autocorr_acc": 68.63
+    },
+    {
+      "nada": "D",
+      "jumlah": 331,
+      "fft_acc": 42.6,
+      "autocorr_acc": 72.81
+    },
+    {
+      "nada": "E",
+      "jumlah": 332,
+      "fft_acc": 52.41,
+      "autocorr_acc": 88.55
+    },
+    {
+      "nada": "F",
+      "jumlah": 281,
+      "fft_acc": 62.63,
+      "autocorr_acc": 91.1
+    },
+    {
+      "nada": "G",
+      "jumlah": 305,
+      "fft_acc": 70.16,
+      "autocorr_acc": 90.49
+    }
+  ],
+  "labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G"
+  ],
+  "confusion_matrix_fft": [
+    [
+      199,
+      1,
+      6,
+      24,
+      101,
+      0,
+      6
+    ],
+    [
+      8,
+      176,
+      4,
+      23,
+      0,
+      69,
+      0
+    ],
+    [
+      29,
+      6,
+      182,
+      26,
+      26,
+      4,
+      33
+    ],
+    [
+      157,
+      4,
+      4,
+      141,
+      16,
+      9,
+      0
+    ],
+    [
+      9,
+      128,
+      0,
+      15,
+      174,
+      0,
+      6
+    ],
+    [
+      9,
+      0,
+      90,
+      0,
+      2,
+      176,
+      4
+    ],
+    [
+      10,
+      13,
+      1,
+      64,
+      0,
+      3,
+      214
+    ]
+  ],
+  "confusion_matrix_autocorr": [
+    [
+      222,
+      1,
+      0,
+      43,
+      14,
+      2,
+      55
+    ],
+    [
+      5,
+      208,
+      3,
+      35,
+      1,
+      7,
+      21
+    ],
+    [
+      2,
+      0,
+      210,
+      39,
+      13,
+      4,
+      38
+    ],
+    [
+      12,
+      1,
+      1,
+      241,
+      7,
+      5,
+      64
+    ],
+    [
+      0,
+      0,
+      3,
+      18,
+      294,
+      1,
+      16
+    ],
+    [
+      2,
+      0,
+      8,
+      10,
+      1,
+      256,
+      4
+    ],
+    [
+      5,
+      2,
+      5,
+      17,
+      0,
+      0,
+      276
+    ]
+  ],
+  "sample_30_rows": [
+    {
+      "nama_file": "HBStrat_G_open_422_ID1_8.wav",
+      "model_gitar": "HBStrat",
+      "akor_asli": "G",
+      "root_asli": "G",
+      "fft_freq_hz": 398.0,
+      "fft_root": "G",
+      "autocorr_freq_hz": 99.32,
+      "autocorr_root": "G"
+    },
+    {
+      "nama_file": "Gretsch_D_open_022_ID1_10.wav",
+      "model_gitar": "Gretsch",
+      "akor_asli": "D",
+      "root_asli": "D",
+      "fft_freq_hz": 442.0,
+      "fft_root": "A",
+      "autocorr_freq_hz": 73.75,
+      "autocorr_root": "D"
+    },
+    {
+      "nama_file": "HBStrat_D_open_322_ID1_9.wav",
+      "model_gitar": "HBStrat",
+      "akor_asli": "D",
+      "root_asli": "D",
+      "fft_freq_hz": 296.0,
+      "fft_root": "D",
+      "autocorr_freq_hz": 74.49,
+      "autocorr_root": "D"
+    },
+    {
+      "nama_file": "HBLP_D_open_022_ID1_10.wav",
+      "model_gitar": "HBLP",
+      "akor_asli": "D",
+      "root_asli": "D",
+      "fft_freq_hz": 442.0,
+      "fft_root": "A",
+      "autocorr_freq_hz": 73.5,
+      "autocorr_root": "D"
+    },
+    {
+      "nama_file": "HBLP_Em_open_122_ID1_10.wav",
+      "model_gitar": "HBLP",
+      "akor_asli": "Em",
+      "root_asli": "E",
+      "fft_freq_hz": 164.0,
+      "fft_root": "E",
+      "autocorr_freq_hz": 82.28,
+      "autocorr_root": "E"
+    },
+    {
+      "nama_file": "Gretsch_Bm_open_022_ID1_8.wav",
+      "model_gitar": "Gretsch",
+      "akor_asli": "Bm",
+      "root_asli": "B",
+      "fft_freq_hz": 250.0,
+      "fft_root": "B",
+      "autocorr_freq_hz": 62.64,
+      "autocorr_root": "B"
+    },
+    {
+      "nama_file": "HBLP_Cm_open_022_ID1_2.wav",
+      "model_gitar": "HBLP",
+      "akor_asli": "Cm",
+      "root_asli": "C",
+      "fft_freq_hz": 196.0,
+      "fft_root": "G",
+      "autocorr_freq_hz": 1225.0,
+      "autocorr_root": "D"
+    },
+    {
+      "nama_file": "HBTE52_Gm_open_022_ID1_3.wav",
+      "model_gitar": "HBTE52",
+      "akor_asli": "Gm",
+      "root_asli": "G",
+      "fft_freq_hz": 196.0,
+      "fft_root": "G",
+      "autocorr_freq_hz": 50.11,
+      "autocorr_root": "G"
+    },
+    {
+      "nama_file": "HBTE52_Fm_open_122_ID1_9.wav",
+      "model_gitar": "HBTE52",
+      "akor_asli": "Fm",
+      "root_asli": "F",
+      "fft_freq_hz": 264.0,
+      "fft_root": "C",
+      "autocorr_freq_hz": 87.5,
+      "autocorr_root": "F"
+    },
+    {
+      "nama_file": "Gretsch_Dm_open_122_ID1_5.wav",
+      "model_gitar": "Gretsch",
+      "akor_asli": "Dm",
+      "root_asli": "D",
+      "fft_freq_hz": 440.0,
+      "fft_root": "A",
+      "autocorr_freq_hz": 73.5,
+      "autocorr_root": "D"
+    },
+    {
+      "nama_file": "HBTE52_Bm_open_122_ID1_1.wav",
+      "model_gitar": "HBTE52",
+      "akor_asli": "Bm",
+      "root_asli": "B",
+      "fft_freq_hz": 186.0,
+      "fft_root": "F",
+      "autocorr_freq_hz": 93.04,
+      "autocorr_root": "F"
+    },
+    {
+      "nama_file": "HBLP_Gm_open_122_ID1_10.wav",
+      "model_gitar": "HBLP",
+      "akor_asli": "Gm",
+      "root_asli": "G",
+      "fft_freq_hz": 196.0,
+      "fft_root": "G",
+      "autocorr_freq_hz": 97.57,
+      "autocorr_root": "G"
+    },
+    {
+      "nama_file": "HBStrat_Gm_open_122_ID1_4.wav",
+      "model_gitar": "HBStrat",
+      "akor_asli": "Gm",
+      "root_asli": "G",
+      "fft_freq_hz": 200.0,
+      "fft_root": "G",
+      "autocorr_freq_hz": 98.44,
+      "autocorr_root": "G"
+    },
+    {
+      "nama_file": "HBTE52_D_open_122_ID1_9.wav",
+      "model_gitar": "HBTE52",
+      "akor_asli": "D",
+      "root_asli": "D",
+      "fft_freq_hz": 64.0,
+      "fft_root": "C",
+      "autocorr_freq_hz": 1225.0,
+      "autocorr_root": "D"
+    },
+    {
+      "nama_file": "HBLP_Am_open_222_ID1_3.wav",
+      "model_gitar": "HBLP",
+      "akor_asli": "Am",
+      "root_asli": "A",
+      "fft_freq_hz": 220.0,
+      "fft_root": "A",
+      "autocorr_freq_hz": 109.7,
+      "autocorr_root": "A"
+    },
+    {
+      "nama_file": "Gretsch_E_open_122_ID1_8.wav",
+      "model_gitar": "Gretsch",
+      "akor_asli": "E",
+      "root_asli": "E",
+      "fft_freq_hz": 164.0,
+      "fft_root": "E",
+      "autocorr_freq_hz": 82.58,
+      "autocorr_root": "E"
+    },
+    {
+      "nama_file": "HBTE52_E_open_222_ID1_2.wav",
+      "model_gitar": "HBTE52",
+      "akor_asli": "E",
+      "root_asli": "E",
+      "fft_freq_hz": 164.0,
+      "fft_root": "E",
+      "autocorr_freq_hz": 82.89,
+      "autocorr_root": "E"
+    },
+    {
+      "nama_file": "HBStrat_Am_open_1222_ID4_9.wav",
+      "model_gitar": "HBStrat",
+      "akor_asli": "Am",
+      "root_asli": "A",
+      "fft_freq_hz": 82.0,
+      "fft_root": "E",
+      "autocorr_freq_hz": 109.16,
+      "autocorr_root": "A"
+    },
+    {
+      "nama_file": "HBLP_Em_open_222_ID1_1.wav",
+      "model_gitar": "HBLP",
+      "akor_asli": "Em",
+      "root_asli": "E",
+      "fft_freq_hz": 164.0,
+      "fft_root": "E",
+      "autocorr_freq_hz": 82.28,
+      "autocorr_root": "E"
+    },
+    {
+      "nama_file": "Gretsch_E_open_022_ID1_8.wav",
+      "model_gitar": "Gretsch",
+      "akor_asli": "E",
+      "root_asli": "E",
+      "fft_freq_hz": 168.0,
+      "fft_root": "E",
+      "autocorr_freq_hz": 1225.0,
+      "autocorr_root": "D"
+    },
+    {
+      "nama_file": "HBLP_G_open_222_ID1_10.wav",
+      "model_gitar": "HBLP",
+      "akor_asli": "G",
+      "root_asli": "G",
+      "fft_freq_hz": 196.0,
+      "fft_root": "G",
+      "autocorr_freq_hz": 98.0,
+      "autocorr_root": "G"
+    },
+    {
+      "nama_file": "HBLP_G_open_022_ID1_1.wav",
+      "model_gitar": "HBLP",
+      "akor_asli": "G",
+      "root_asli": "G",
+      "fft_freq_hz": 194.0,
+      "fft_root": "G",
+      "autocorr_freq_hz": 97.14,
+      "autocorr_root": "G"
+    },
+    {
+      "nama_file": "HBStrat_Fm_open_222_ID1_11.wav",
+      "model_gitar": "HBStrat",
+      "akor_asli": "Fm",
+      "root_asli": "F",
+      "fft_freq_hz": 178.0,
+      "fft_root": "F",
+      "autocorr_freq_hz": 88.55,
+      "autocorr_root": "F"
+    },
+    {
+      "nama_file": "EpiSG_Am_open_122_ID4_8.wav",
+      "model_gitar": "EpiSG",
+      "akor_asli": "Am",
+      "root_asli": "A",
+      "fft_freq_hz": 524.0,
+      "fft_root": "C",
+      "autocorr_freq_hz": 52.75,
+      "autocorr_root": "G"
+    },
+    {
+      "nama_file": "HBTE52_Em_open_122_ID1_7.wav",
+      "model_gitar": "HBTE52",
+      "akor_asli": "Em",
+      "root_asli": "E",
+      "fft_freq_hz": 166.0,
+      "fft_root": "E",
+      "autocorr_freq_hz": 82.58,
+      "autocorr_root": "E"
+    },
+    {
+      "nama_file": "HBStrat_Em_open_322_ID1_4.wav",
+      "model_gitar": "HBStrat",
+      "akor_asli": "Em",
+      "root_asli": "E",
+      "fft_freq_hz": 166.0,
+      "fft_root": "E",
+      "autocorr_freq_hz": 82.89,
+      "autocorr_root": "E"
+    },
+    {
+      "nama_file": "Gretsch_Bm_open_022_ID1_1.wav",
+      "model_gitar": "Gretsch",
+      "akor_asli": "Bm",
+      "root_asli": "B",
+      "fft_freq_hz": 296.0,
+      "fft_root": "D",
+      "autocorr_freq_hz": 59.59,
+      "autocorr_root": "A"
+    },
+    {
+      "nama_file": "Gretsch_C_open_022_ID1_1.wav",
+      "model_gitar": "Gretsch",
+      "akor_asli": "C",
+      "root_asli": "C",
+      "fft_freq_hz": 262.0,
+      "fft_root": "C",
+      "autocorr_freq_hz": 131.25,
+      "autocorr_root": "C"
+    },
+    {
+      "nama_file": "HBLP_F_open_122_ID1_6.wav",
+      "model_gitar": "HBLP",
+      "akor_asli": "F",
+      "root_asli": "F",
+      "fft_freq_hz": 174.0,
+      "fft_root": "F",
+      "autocorr_freq_hz": 87.15,
+      "autocorr_root": "F"
+    },
+    {
+      "nama_file": "Gretsch_Em_open_022_ID1_6.wav",
+      "model_gitar": "Gretsch",
+      "akor_asli": "Em",
+      "root_asli": "E",
+      "fft_freq_hz": 248.0,
+      "fft_root": "B",
+      "autocorr_freq_hz": 82.58,
+      "autocorr_root": "E"
+    }
+  ],
+  "web_audio_samples": [
+    {
+      "filename": "Gretsch_C_open_122_ID1_1.wav",
+      "brand": "Gretsch",
+      "akor": "C",
+      "root": "C",
+      "url": "/samples/Gretsch_C_open_122_ID1_1.wav"
+    },
+    {
+      "filename": "HBStrat_Am_open_422_ID1_9.wav",
+      "brand": "HBStrat",
+      "akor": "Am",
+      "root": "A",
+      "url": "/samples/HBStrat_Am_open_422_ID1_9.wav"
+    },
+    {
+      "filename": "EpiSG_E_open_122_ID4_1.wav",
+      "brand": "EpiSG",
+      "akor": "E",
+      "root": "E",
+      "url": "/samples/EpiSG_E_open_122_ID4_1.wav"
+    },
+    {
+      "filename": "HBLP_G_open_022_ID1_1.wav",
+      "brand": "HBLP",
+      "akor": "G",
+      "root": "G",
+      "url": "/samples/HBLP_G_open_022_ID1_1.wav"
+    },
+    {
+      "filename": "HBTE52_D_open_022_ID1_1.wav",
+      "brand": "HBTE52",
+      "akor": "D",
+      "root": "D",
+      "url": "/samples/HBTE52_D_open_022_ID1_1.wav"
+    },
+    {
+      "filename": "HBStrat_F_open_322_ID1_1.wav",
+      "brand": "HBStrat",
+      "akor": "F",
+      "root": "F",
+      "url": "/samples/HBStrat_F_open_322_ID1_1.wav"
+    },
+    {
+      "filename": "Gretsch_Bm_open_022_ID1_1.wav",
+      "brand": "Gretsch",
+      "akor": "Bm",
+      "root": "B",
+      "url": "/samples/Gretsch_Bm_open_022_ID1_1.wav"
+    },
+    {
+      "filename": "EpiSG_Dm_open_122_ID4_1.wav",
+      "brand": "EpiSG",
+      "akor": "Dm",
+      "root": "D",
+      "url": "/samples/EpiSG_Dm_open_122_ID4_1.wav"
+    }
+  ]
+}
